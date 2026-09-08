@@ -1,0 +1,23 @@
+[project]
+name = "project-langchain"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "sandeep", email = "infernoalways.9@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "ipykernel>=7.3.0",
+    "langchain>=1.3.16",
+    "langchain-community>=0.4.2",
+    "langchain-groq>=1.1.3",
+    "python-dotenv>=1.2.3",
+]
+
+[project.scripts]
+project-langchain = "project_langchain:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
